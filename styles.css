@@ -1,0 +1,143 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px gray;
+    border-radius: 10px;
+    margin-top: 50px;
+    position: relative;
+}
+
+/* Quiz Header */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Timer */
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Quiz Question Section */
+#quiz-container {
+    display: none; /* Hidden initially */
+}
+
+/* Question and Options */
+#question-container {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#options-container button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#options-container button:hover {
+    background-color: #45a049;
+}
+
+/* Navigation Buttons */
+#next-button,
+#submit-button {
+    display: none; /* Hidden by default */
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+#next-button:hover,
+#submit-button:hover {
+    background-color: #0fb300;
+    position: relative;
+}
+
+/* Chatbot Styles */
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#chat-window {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#user-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#user-input:focus {
+    border-color: #007BFF;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .chatbot {
+        width: 100%;
+        bottom: 10px;
+        right: 10px;
+        height: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
